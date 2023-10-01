@@ -19,7 +19,7 @@ export function ExpenseInput(props) {
     e.preventDefault();
     dispatch(
       addExpenseAction({
-        expense,
+        expense: parseFloat(expense),
         name: expenseName,
       })
     );
